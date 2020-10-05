@@ -13,5 +13,6 @@ def main():
         collatz(num)
     except ValueError:
         print('you need to give me number, not word/words, dummy')
+        main()
 
 main()
