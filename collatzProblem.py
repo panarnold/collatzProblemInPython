@@ -8,7 +8,10 @@ def collatz(number):
     
 
 def main():
-    num = int(input('give me the number:\n'))
-    collatz(num)
+    try:
+        num = int(input('give me the number:\n'))
+        collatz(num)
+    except ValueError:
+        print('you need to give me number, not word/words, dummy')
 
 main()
